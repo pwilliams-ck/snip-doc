@@ -25,7 +25,7 @@ You can learn more about Alex and the books
 [here](https://www.alexedwards.net/), he has been teaching Go professionally for
 10+ years.
 
-At its core, snip-doc will be based on the book's application dubbed
+At it's core, snip-doc will be based on the book's application dubbed
 _Snippetbox_. It offers a straight forward text snippet upload tool, similar to
 Pastebin or Github Gists. I am changing the name to help signify the 2 different
 code bases when developing the project.
