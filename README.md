@@ -92,7 +92,7 @@ This is not required but helps speed up development, it is similar to
 go install github.com/cosmtrek/air@latest
 ```
 
-Initialize _air_, you only need to do this once per project.
+Initialize _air_, you only need to do this once per project from the root directory.
 
 ```bash
 air init
