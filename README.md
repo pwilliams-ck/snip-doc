@@ -37,7 +37,7 @@ to this path.
 
 ### Let's Go
 
-This section goes over the plan to efficietly understand _Let's Go_, while
+This section goes over the plan to efficiently understand _Let's Go_, while
 minimizing time spend on front end and database operations.
 
 The app will have a fully functioning front end and user authentication
