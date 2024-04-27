@@ -168,8 +168,8 @@ This project will be built, then mostly left here as a learning resource.
 ### Due Diligence
 
 In March and April of 2024, many hours of research went into technology forums
-and other blogs to select the most efficient and cost effctive way to build
-proper web services. Not only with Go, but other languages and technologies as
+and other blogs to select the most efficient and cost effective way to build
+proper cloud micro services. Not only with Go, but other languages and technologies as
 well.
 
 In the end, Go seemed most suitable for the use case of efficiently building
