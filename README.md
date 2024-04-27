@@ -61,7 +61,7 @@ approach and follow _TDD_ (Test Driven Development) guidelines from Chris James'
 as to why this is a good idea are included in the link.
 
 The following section gets you Go-ing with installing, running, and
-understanding the project.
+understanding the project outline.
 
 ## Getting Started
 
