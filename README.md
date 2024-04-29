@@ -168,12 +168,28 @@ This project will be built, then mostly left here as a learning resource.
 ### Due Diligence
 
 In March and April of 2024, many hours of research went into technology forums
-and other blogs to select the most efficient and cost effective way to build
-proper cloud micro services. Not only with Go, but other languages and technologies as
+and other blogs to select the most efficient and cost effective way to learn and build
+proper cloud services. Not only with Go, but other languages and technologies as
 well.
 
-In the end, Go seemed most suitable for the use case of efficiently building
-production ready, scalable, cloud micro services.
+In the end, Go and the _Let's Go_ series seemed most suitable for the use case, there were other
+considerations for technologies, and then Go learning resources as well.
+
+### Other Considerations
+
+- Typescript
+- PHP
+- Python
+
+For Go learning rescources, I also considered the following.
+
+- Ardan Labs - William Kennedy
+- Go Beyond
+- Full time Go dev
+- Use Golang
+
+These individuals and teams were either too expensive, too opinionated, or were not offering
+any value for this project.
 
 #### Research Resources
 
