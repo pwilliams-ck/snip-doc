@@ -172,16 +172,14 @@ and other blogs to select the most efficient and cost effective way to learn and
 proper cloud services. Not only with Go, but other languages and technologies as
 well.
 
-In the end, Go and the _Let's Go_ series seemed most suitable for the use case, there were other
-considerations for technologies, and then Go learning resources as well.
-
-### Other Considerations
+In the end, Go and the _Let's Go_ series seemed most suitable. There were other
+considerations for technologies, and Go learning resources, including:
 
 - Typescript
 - PHP
 - Python
 
-For Go learning rescources, I also considered the following.
+For Go learning rescources.
 
 - Ardan Labs - William Kennedy
 - Go Beyond
