@@ -38,7 +38,7 @@ to this path.
 ### Let's Go
 
 This section goes over the plan to efficiently understand _Let's Go_, while
-minimizing time spend on front end and database operations.
+minimizing time spent on front end and database operations.
 
 The app will have a fully functioning front end and user authentication
 database. But, I will lightly skim over the HTML templates and CSS parts. I will
@@ -107,7 +107,7 @@ air
 
 ### Project Structure
 
-Directory tree example, through chapter 5.
+Directory tree example, through chapter 3.
 
 ```bash
 .(root)
@@ -151,7 +151,7 @@ Directory tree example, through chapter 5.
 
 ### Routes
 
-Route pattern examples, through chapter 5.
+Route pattern examples, through chapter 3.
 
 | Route Pattern          | Handler           | Action                                    |
 | ---------------------- | ----------------- | ----------------------------------------- |
@@ -205,22 +205,3 @@ of value from these resources to find the right tools.
   Learning site recommended by Mat Ryer
 - [Go by Example](https://gobyexample.com/) - Learning site recommended by
   Chris James
-
-#### Famous Go Projects
-
-These projects are heavily written in Go, lots of cloud based services.
-
-- Docker
-- Kubernetes
-- Terraform
-- Grafana
-- Prometheus
-- Istio
-- Hugo
-- Traefik
-- Ollama
-- Caddy
-- frp
-- etcd
-- fzf
-- esbuild
