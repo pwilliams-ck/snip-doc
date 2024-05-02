@@ -107,7 +107,7 @@ air
 
 ### Project Structure
 
-Directory tree example, through chapter 3.
+Directory tree example, through chapter 5.
 
 ```bash
 .(root)
@@ -151,7 +151,7 @@ Directory tree example, through chapter 3.
 
 ### Routes
 
-Route pattern examples, through chapter 3.
+Route pattern examples, through chapter 5.
 
 | Route Pattern          | Handler           | Action                                    |
 | ---------------------- | ----------------- | ----------------------------------------- |
@@ -185,9 +185,6 @@ For Go learning rescources.
 - Go Beyond
 - Full time Go dev
 - Use Golang
-
-These individuals and teams were either too expensive, too opinionated, or were not offering
-any value for this project.
 
 #### Research Resources
 
