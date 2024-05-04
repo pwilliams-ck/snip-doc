@@ -11,18 +11,17 @@ type Snippet struct {
 	Title   string
 	Content string
 	Created time.Time
-	Expires time.Time
 }
 
 type SnippetModel struct {
 	DB *sql.DB
 }
 
-func (m *SnippetModel) Insert(title string, content string, expires int) (int, error) {
-	stmt := `INSERT INTO snippets (title, content, created, expires)
-    VALUES(?, ?, UTC_TIMESTAMP(), DATE_ADD(UTC_TIMESTAMP(), INTERVAL ? DAY))`
+func (m *SnippetModel) Insert(title string, content string) (int, error) {
+	stmt := `INSERT INTO snippets (title, content, created)
+    VALUES(?, ?, UTC_TIMESTAMP())`
 
-	result, err := m.DB.Exec(stmt, title, content, expires)
+	result, err := m.DB.Exec(stmt, title, content)
 	if err != nil {
 		return 0, err
 	}
@@ -36,14 +35,13 @@ func (m *SnippetModel) Insert(title string, content string, expires int) (int, e
 }
 
 func (m *SnippetModel) Get(id int) (Snippet, error) {
-	stmt := `SELECT id, title, content, created, expires FROM snippets
-    WHERE expires > UTC_TIMESTAMP() AND id = ?`
+	stmt := `SELECT id, title, content, created FROM snippets
+    WHERE id = ?`
 
 	row := m.DB.QueryRow(stmt, id)
 
-	// Initialize a new zeroed Snippet struct.
 	var s Snippet
-	err := row.Scan(&s.ID, &s.Title, &s.Content, &s.Created, &s.Expires)
+	err := row.Scan(&s.ID, &s.Title, &s.Content, &s.Created)
 	if err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			return Snippet{}, ErrNoRecord
@@ -56,8 +54,8 @@ func (m *SnippetModel) Get(id int) (Snippet, error) {
 }
 
 func (m *SnippetModel) Latest() ([]Snippet, error) {
-	stmt := `SELECT id, title, content, created, expires FROM snippets
-    WHERE expires > UTC_TIMESTAMP() ORDER BY id DESC LIMIT 10`
+	stmt := `SELECT id, title, content, created FROM snippets
+    WHERE created <= UTC_TIMESTAMP() ORDER BY created DESC LIMIT 10`
 
 	rows, err := m.DB.Query(stmt)
 	if err != nil {
@@ -70,7 +68,7 @@ func (m *SnippetModel) Latest() ([]Snippet, error) {
 
 	for rows.Next() {
 		var s Snippet
-		err = rows.Scan(&s.ID, &s.Title, &s.Content, &s.Created, &s.Expires)
+		err = rows.Scan(&s.ID, &s.Title, &s.Content, &s.Created)
 		if err != nil {
 			return nil, err
 		}
