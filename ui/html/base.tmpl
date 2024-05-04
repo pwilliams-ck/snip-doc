@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang='en'>
     <head>
-        <meta charset='utf-7'>
+        <meta charset='utf-8'>
         <title>{{template "title" .}} - snip-doc</title>
         <link rel='stylesheet' href='/static/css/main.css'>
         <link rel='shortcut icon' href='/static/img/favicon.ico' type='image/x-icon'>
@@ -11,6 +11,9 @@
     <body>
         {{template "nav" .}}
         <main>
+        {{with .Flash}}
+        <div class='flash'>{{.}}</div>
+        {{end}}
             {{template "main" .}}
         </main>
         <footer>
