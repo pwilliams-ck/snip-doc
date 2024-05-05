@@ -71,6 +71,7 @@ func main() {
 	// by all of this as it is all its connections are considered
 	// safe as of Go 1.22.
 	tlsConfig := &tls.Config{
+		MinVersion:       tls.VersionTLS13,
 		CurvePreferences: []tls.CurveID{tls.X25519, tls.CurveP256},
 		CipherSuites: []uint16{
 			tls.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
